@@ -1,0 +1,20 @@
+{% extends 'index.html'%}
+{% block title %}регистрация{% endblock %}
+
+{% block plants %}
+
+    <h1>Форма регистрации</h1>
+    <form method="post">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" value="{{ request.form.username }}">
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button class="btn" type="submit">Зарегистрироваться</button>
+    </form>
+    {% if message %}
+    {{message}}
+    {% endif %}
+   
+{% endblock %}

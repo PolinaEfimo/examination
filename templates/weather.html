@@ -1,0 +1,22 @@
+{% extends 'index.html'%}
+{% block title %}Погода{% endblock %}
+
+{% block plants %}
+       <form method="POST" action="/weather">
+        <label for="celsius">Введите название города:</label>
+        <input type="number" id="weather" name="weather">
+        <input type="submit" value="Ввод">
+    </form>
+    {% if city %}
+    <h3>Погода в городе {{city}}:
+        Температура воздуха: {{temp}}°C
+        Влажность: {{humidity}}%
+        Направление ветра: {{wind_dir}}
+        Скорость ветра: {{wind_speed}}
+        Минимальная температура: {{temp_minn}}
+        Максимальная температура: {{temp_maxx}}
+        </h3>
+    {% endif %}
+    {% endblock %}
+</body>
+</html>

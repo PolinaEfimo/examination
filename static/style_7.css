@@ -1,0 +1,140 @@
+.logo {
+    float: left;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+    margin-bottom: 100px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plants p {
+    width: 100%;
+    text-align: justify;
+}
+.picture {
+    display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+flex-wrap: wrap;
+align-items: stretch;
+
+        
+}
+.picture img{
+    max-width: 30%;
+    border-radius: 10px;
+    width: 300px;
+    height: auto
+}
+.block_1 {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid;
+    margin-top: 150px;
+    flex: 1;
+    padding: 20px;
+    width: 25%;
+}
+.block_2 {
+    background-color: azure;
+    margin-top: 150px;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    flex: 2;
+    max-width: 800px;
+margin: 0 auto;
+
+    
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .text-block p{
+width: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+       
+}
+nav a {
+    flex-grow: 1;
+    margin-left: 100px;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 300px;
+ margin: 0 auto;
+}
+
+label {
+ display: block;
+ margin-bottom: 10px;
+}
+
+input {
+ display: block;
+ padding: 10px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ outline: none;
+}
+
+input[type="text"],
+input[type="password"] {
+ width: 100%;
+}
+
+.btn {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px 20px;
+ margin-top: 10px;
+ border: none;
+ cursor: pointer;
+
+width: 50%;
+}
+
+button:hover {
+background-color: #0056b3;
+}

@@ -1,0 +1,11 @@
+{% extends 'index.html'%}
+{% block title %}Ошибка{% endblock %}
+
+{% block plants %}
+
+    <h1>Неправильный логин или пароль!</h1>
+    {% if message %}
+    {{message}}
+    {% endif %}
+    <img src="/static/error.png" alt="Ошибка">
+{% endblock %}

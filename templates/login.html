@@ -1,0 +1,22 @@
+{% extends 'index.html'%}
+{% block title %}Вход{% endblock %}
+
+{% block plants %}
+    <h1>Форма входа</h1>
+    <form method="post">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" value="{{ request.form.username }}">
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button class="btn" type="submit">Войти</button>
+    </form>
+    {% if message %}
+    <p>{{message}}</p>
+
+    {% endif %}
+{% endblock %}
+</body>
+</html>
+
